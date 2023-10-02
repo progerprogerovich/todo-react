@@ -33,12 +33,17 @@ const EditTaskModal = ({ task, onSave, onCancel, isTaskInfoVisible }) => {
             onChange={(e) => setEditedDescription(e.target.value)}
             className={styles.modalTextarea}
           />
-          <button onClick={handleSaveClick} className={styles.modalButtonSave}>
-            Сохранить
-          </button>
-          <button onClick={onCancel} className={styles.modalButtonCancel}>
-            Отмена
-          </button>
+          <div>
+            <button
+              onClick={handleSaveClick}
+              className={styles.modalButtonSave}
+            >
+              Сохранить
+            </button>
+            <button onClick={onCancel} className={styles.modalButtonCancel}>
+              Отмена
+            </button>
+          </div>
         </div>
       </div>
     </div>
