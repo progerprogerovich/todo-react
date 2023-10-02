@@ -6,7 +6,7 @@ import TaskList from "./components/TaskList/TaskList";
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<ProjectSelectionPage />} />
+      <Route path="/todo-react" element={<ProjectSelectionPage />} />
       <Route path="/project/:projectId" element={<TaskList />} />
     </Routes>
   );
