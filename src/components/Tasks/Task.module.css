@@ -1,0 +1,8 @@
+.task__buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  max-width: 300px;
+}
