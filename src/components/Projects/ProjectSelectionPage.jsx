@@ -5,7 +5,7 @@ import {
   addProjectAction,
   removeProjectAction,
   selectProjectAction,
-} from "../../store/reducer";
+} from "../../store/projectsReducer";
 import styles from "./ProjectSelectionPage.module.scss";
 
 const ProjectSelectionPage = () => {

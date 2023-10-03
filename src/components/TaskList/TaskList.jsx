@@ -7,7 +7,7 @@ import {
   addTaskAction,
   removeTaskAction,
   updateTaskOrderAction,
-} from "../../store/taskReducer";
+} from "../../store/tasksReducer";
 import styles from "./TaskList.module.scss";
 import Task from "../Tasks/Task";
 import { DragDropContext, Droppable } from "react-beautiful-dnd";

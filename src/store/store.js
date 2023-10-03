@@ -1,6 +1,6 @@
 import { createStore, combineReducers } from "redux";
-import { projectsReducer } from "./reducer";
-import { tasksReducer } from "./taskReducer";
+import { projectsReducer } from "./projectsReducer";
+import { tasksReducer } from "./tasksReducer";
 import { persistReducer, persistStore } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 

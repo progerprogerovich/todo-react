@@ -7,7 +7,7 @@ import {
   updateTaskAction,
   updateTaskOrderAction,
   toggleSubtaskCompletedAction,
-} from "../../store/taskReducer";
+} from "../../store/tasksReducer";
 import { Draggable } from "react-beautiful-dnd";
 import styles from "./Task.module.scss";
 
