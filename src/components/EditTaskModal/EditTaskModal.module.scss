@@ -15,9 +15,29 @@
   background-color: #fff;
   padding: 20px;
   border: 1px solid #888;
-  max-width: 400px;
+  max-width: 1500px;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
 }
 
-.modalContent button {
+input {
+  height: 50px;
+}
+
+.modalContent {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modalButtonSave {
+  margin-top: 10px;
+}
+
+.modalButtonCancel {
   margin-top: 10px;
 }

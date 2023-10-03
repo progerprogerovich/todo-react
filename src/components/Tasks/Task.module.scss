@@ -1,8 +1,11 @@
 .task__buttons {
+  margin-top: 5px;
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 button {
   max-width: 300px;
+  height: 25px;
 }

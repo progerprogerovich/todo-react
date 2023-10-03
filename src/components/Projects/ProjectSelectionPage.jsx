@@ -6,7 +6,7 @@ import {
   removeProjectAction,
   selectProjectAction,
 } from "../../store/reducer";
-import styles from "./ProjectSelectionPage.module.css";
+import styles from "./ProjectSelectionPage.module.scss";
 
 const ProjectSelectionPage = () => {
   const [selectedProjectId, setSelectedProjectId] = useState(null);
@@ -52,7 +52,10 @@ const ProjectSelectionPage = () => {
               >
                 {project.name}
               </Link>{" "}
-              <button onClick={() => removeProject(project.id)}>
+              <button
+                className={styles.project__remove_button}
+                onClick={() => removeProject(project.id)}
+              >
                 Удалить проект
               </button>
             </li>

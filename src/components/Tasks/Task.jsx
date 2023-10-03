@@ -9,7 +9,7 @@ import {
   toggleSubtaskCompletedAction,
 } from "../../store/taskReducer";
 import { Draggable } from "react-beautiful-dnd";
-import styles from "./Task.module.css";
+import styles from "./Task.module.scss";
 
 const Task = ({
   task,
@@ -58,7 +58,6 @@ const Task = ({
     }
   };
 
-  // Функция для переключения состояния подзадачи
   const toggleSubtaskCompleted = (subtaskId) => {
     dispatch(toggleSubtaskCompletedAction(subtaskId));
   };
@@ -95,19 +94,7 @@ const Task = ({
           <p>Время в работе: {task.workTime}</p>
           <p>Дата окончания: {task.endDate}</p>
           <p>Приоритет: {task.priority}</p>
-          <p>
-            Вложенные файлы:{" "}
-            {task.attachments.map((attachment, index) => (
-              <a
-                key={index}
-                href={attachment}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {attachment}
-              </a>
-            ))}
-          </p>
+
           <p>
             Текущий статус:{" "}
             <select
@@ -125,6 +112,19 @@ const Task = ({
               ))}
             </select>
           </p>
+          <p>
+            Вложенные файлы:{" "}
+            {task.attachments.map((attachment, index) => (
+              <a
+                key={index}
+                href={attachment}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {attachment}
+              </a>
+            ))}
+          </p>
           <input
             type="file"
             multiple
@@ -135,7 +135,7 @@ const Task = ({
               <Subtask
                 key={subtask.id}
                 subtask={subtask}
-                toggleCompleted={toggleSubtaskCompleted} // Передаем функцию для переключения состояния подзадачи
+                toggleCompleted={toggleSubtaskCompleted}
               />
             ))}
           </ul>
